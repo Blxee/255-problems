@@ -1,0 +1,11 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1782464371
+icon.svg::CompressedTexture2D::8927251437230998064::1782407542::1782407562::1::::<><><>0<>0<>2e1972acede08f269de5c1246fab5207<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+ip_addr.gd::GDScript::2428161928481810854::1782410150::0::1::::<>LineEdit<><>0<>0<><>::
+ip_editor.gd::GDScript::7958796477116618532::1782409987::0::1::::<>PanelContainer<><>0<>1<><>::
+ip_editor.tscn::PackedScene::2572084219078044637::1782410319::0::1::::<><><>0<>0<><>::uid://dlnkhk0tkx1yu::::res://ip_editor.gd<>uid://bauhqb4qerkss::::res://ip_addr.gd
+network_editor.tscn::PackedScene::160749563570058429::1782410030::0::1::::<><><>0<>0<><>::uid://bcv637dtrxlu8::::res://ip_editor.tscn
+::res://assets/::1782407562
+LilitaOne-Regular.ttf::FontFile::6136896174703160589::1782407542::1782407562::1::::<><><>0<>0<>25e31ced1ed6a97f1ced938c118aa047<>res://.godot/imported/LilitaOne-Regular.ttf-eb7df87350daf03d98970d2ded42cc2c.fontdata::
+::res://resources/::1782409768
+theme.tres::Theme::6005544105830384907::1782409768::0::1::::<><><>0<>0<><>::uid://cto01vugnj7m4::::res://assets/LilitaOne-Regular.ttf

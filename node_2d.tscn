@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://b4bbvvomoy5og"]
+
+[ext_resource type="Texture2D" uid="uid://d0gor6cvkliwm" path="res://icon.svg" id="1_wtcfe"]
+
+[node name="GraphEdit" type="GraphEdit" unique_id=993509090]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scroll_offset = Vector2(-334, -358)
+grid_pattern = 1
+show_grid_buttons = false
+
+[node name="GraphFrame" type="GraphFrame" parent="." unique_id=565627741]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 119.0
+offset_right = 675.0
+offset_bottom = 407.0
+mouse_filter = 1
+position_offset = Vector2(59, -239)
+title = "yeah"
+tint_color_enabled = true
+tint_color = Color(0.5606433, 0, 0.2797687, 0.7490196)
+
+[node name="FoldableContainer" type="FoldableContainer" parent="GraphFrame" unique_id=1117348481]
+layout_mode = 2
+title = "broooo"
+
+[node name="TextureRect" type="TextureRect" parent="GraphFrame/FoldableContainer" unique_id=943684388]
+layout_mode = 2
+texture = ExtResource("1_wtcfe")
+
+[node name="GraphNode" type="GraphNode" parent="." unique_id=158052853]
+layout_mode = 0
+offset_left = 486.0
+offset_top = 598.0
+offset_right = 679.0
+offset_bottom = 841.0
+mouse_filter = 1
+position_offset = Vector2(152, 240)
+draggable = false
+title = "Bruh"
+slots_focus_mode = 1
+slot/0/left_enabled = true
+slot/0/left_type = 12
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = ExtResource("1_wtcfe")
+slot/0/draw_stylebox = true
+
+[node name="TextureRect" type="TextureRect" parent="GraphNode" unique_id=1149642915]
+layout_mode = 2
+texture = ExtResource("1_wtcfe")
+
+[node name="GraphNode2" type="GraphNode" parent="." unique_id=1355460156]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 427.0
+offset_right = 236.0
+offset_bottom = 643.0
+mouse_filter = 1
+position_offset = Vector2(-291, 69)
+draggable = false
+title = "Bruh"
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+
+[node name="TextureRect" type="TextureRect" parent="GraphNode2" unique_id=1257014608]
+layout_mode = 2
+texture = ExtResource("1_wtcfe")
+
+[node name="GraphNode3" type="GraphNode" parent="." unique_id=1157391590]
+layout_mode = 0
+offset_left = 305.0
+offset_top = 878.0
+offset_right = 498.0
+offset_bottom = 1094.0
+mouse_filter = 1
+position_offset = Vector2(-29, 520)
+draggable = false
+title = "Bruh"
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+
+[node name="TextureRect" type="TextureRect" parent="GraphNode3" unique_id=2145255614]
+layout_mode = 2
+texture = ExtResource("1_wtcfe")

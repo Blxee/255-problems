@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://bcv637dtrxlu8"]
 
+[ext_resource type="Script" uid="uid://dlnkhk0tkx1yu" path="res://ip_editor.gd" id="1_y0ay6"]
+[ext_resource type="Script" uid="uid://bauhqb4qerkss" path="res://ip_addr.gd" id="2_jtu5y"]
+
 [node name="IpEditor" type="PanelContainer" unique_id=374481799]
-anchors_preset = 15
+anchors_preset = 10
 anchor_right = 1.0
-anchor_bottom = 1.0
+offset_bottom = 122.0
 grow_horizontal = 2
-grow_vertical = 2
+script = ExtResource("1_y0ay6")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1595785900]
 layout_mode = 2
@@ -19,10 +22,16 @@ layout_mode = 2
 size_flags_vertical = 4
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1469947663]
+unique_name_in_owner = true
 layout_mode = 2
 text = "IP Address:"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=798236257]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1254120576]
 layout_mode = 2
@@ -30,11 +39,12 @@ offset_transform_scale = Vector2(0.522, 0.522)
 theme_override_constants/separation = -128
 alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1193078964]
+[node name="IPAddr1" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1193078964]
+unique_name_in_owner = true
 custom_maximum_size = Vector2(86, -1)
 layout_mode = 2
 size_flags_horizontal = 4
-focus_next = NodePath("../LineEdit3")
+focus_next = NodePath("../IPAddr2")
 text = "192"
 alignment = 1
 max_length = 3
@@ -42,6 +52,7 @@ expand_to_text_length = true
 emoji_menu_enabled = false
 select_all_on_focus = true
 virtual_keyboard_type = 3
+script = ExtResource("2_jtu5y")
 
 [node name="Sep" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=781497915]
 custom_minimum_size = Vector2(0.04, 0)
@@ -56,12 +67,13 @@ editable = false
 expand_to_text_length = true
 emoji_menu_enabled = false
 
-[node name="LineEdit3" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=164325342]
+[node name="IPAddr2" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=164325342]
+unique_name_in_owner = true
 custom_maximum_size = Vector2(86, -1)
 layout_mode = 2
 size_flags_horizontal = 4
-focus_next = NodePath("../LineEdit5")
-focus_previous = NodePath("../LineEdit")
+focus_next = NodePath("../IPAddr3")
+focus_previous = NodePath("../IPAddr1")
 text = "168"
 alignment = 1
 max_length = 3
@@ -69,6 +81,7 @@ expand_to_text_length = true
 emoji_menu_enabled = false
 select_all_on_focus = true
 virtual_keyboard_type = 3
+script = ExtResource("2_jtu5y")
 
 [node name="Sep1" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1447636609]
 custom_minimum_size = Vector2(0.04, 0)
@@ -82,12 +95,13 @@ max_length = 1
 editable = false
 expand_to_text_length = true
 
-[node name="LineEdit5" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=843244496]
+[node name="IPAddr3" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=843244496]
+unique_name_in_owner = true
 custom_maximum_size = Vector2(86, -1)
 layout_mode = 2
 size_flags_horizontal = 4
-focus_next = NodePath("../LineEdit7")
-focus_previous = NodePath("../LineEdit3")
+focus_next = NodePath("../IPAddr4")
+focus_previous = NodePath("../IPAddr2")
 text = "0"
 alignment = 1
 max_length = 3
@@ -95,6 +109,7 @@ expand_to_text_length = true
 emoji_menu_enabled = false
 select_all_on_focus = true
 virtual_keyboard_type = 3
+script = ExtResource("2_jtu5y")
 
 [node name="Sep2" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1058625910]
 custom_minimum_size = Vector2(0.04, 0)
@@ -108,11 +123,12 @@ max_length = 1
 editable = false
 expand_to_text_length = true
 
-[node name="LineEdit7" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1141138161]
+[node name="IPAddr4" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1141138161]
+unique_name_in_owner = true
 custom_maximum_size = Vector2(86, -1)
 layout_mode = 2
 size_flags_horizontal = 4
-focus_previous = NodePath("../LineEdit5")
+focus_previous = NodePath("../IPAddr3")
 text = "28"
 alignment = 1
 max_length = 3
@@ -120,3 +136,42 @@ expand_to_text_length = true
 emoji_menu_enabled = false
 select_all_on_focus = true
 virtual_keyboard_type = 3
+script = ExtResource("2_jtu5y")
+
+[node name="MaskSep" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=2109408995]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0.04, 0)
+custom_maximum_size = Vector2(38, -1)
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "/"
+alignment = 1
+max_length = 1
+editable = false
+expand_to_text_length = true
+
+[node name="Mask" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1076649419]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(86, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_previous = NodePath("../IPAddr3")
+text = "28"
+alignment = 1
+max_length = 3
+expand_to_text_length = true
+emoji_menu_enabled = false
+select_all_on_focus = true
+virtual_keyboard_type = 3
+script = ExtResource("2_jtu5y")
+
+[connection signal="focus_exited" from="MarginContainer/VBoxContainer/HBoxContainer/IPAddr1" to="MarginContainer/VBoxContainer/HBoxContainer/IPAddr1" method="_on_focus_exited"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/IPAddr1" to="MarginContainer/VBoxContainer/HBoxContainer/IPAddr1" method="_on_text_changed"]
+[connection signal="focus_exited" from="MarginContainer/VBoxContainer/HBoxContainer/IPAddr2" to="MarginContainer/VBoxContainer/HBoxContainer/IPAddr2" method="_on_focus_exited"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/IPAddr2" to="MarginContainer/VBoxContainer/HBoxContainer/IPAddr2" method="_on_text_changed"]
+[connection signal="focus_exited" from="MarginContainer/VBoxContainer/HBoxContainer/IPAddr3" to="MarginContainer/VBoxContainer/HBoxContainer/IPAddr3" method="_on_focus_exited"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/IPAddr3" to="MarginContainer/VBoxContainer/HBoxContainer/IPAddr3" method="_on_text_changed"]
+[connection signal="focus_exited" from="MarginContainer/VBoxContainer/HBoxContainer/IPAddr4" to="MarginContainer/VBoxContainer/HBoxContainer/IPAddr4" method="_on_focus_exited"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/IPAddr4" to="MarginContainer/VBoxContainer/HBoxContainer/IPAddr4" method="_on_text_changed"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/Mask" to="MarginContainer/VBoxContainer/HBoxContainer/Mask" method="_on_cidr_text_changed"]

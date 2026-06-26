@@ -1,0 +1,5 @@
+res://ip_editor.tscn
+res://resources/theme.tres
+res://ip_addr.gd
+res://network_editor.tscn
+res://node_2d.tscn
